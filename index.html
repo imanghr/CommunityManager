@@ -43,7 +43,7 @@
 	<!-- End Preloader Area -->
 
 
-	<!-- Start Header Area -->
+	<!-- Start Header Area  -->
 	<header id="header">
 		<div class="container main-menu">
 			<div class="row align-items-center d-flex">
@@ -53,16 +53,17 @@
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
 						<li class=""><a class="active" href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li class="menu-has-children"><a href="#">Pages</a>
+						<li><a href="#aboutme">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<!-- <li class="menu-has-children"><a href="#">Pages</a>
 							<ul>
 								<li><a href="elements.html">Elements</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="services.html">Service</a></li>
 								<li><a href="portfolio-details.html">Portfolio Details</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li class="menu-has-children"><a href="">Blog</a>
 							<ul>
 								<li><a href="blog-home.html">Blog Home</a></li>
@@ -87,14 +88,14 @@
 					<div class="designation mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.1s">
 						
 						<span class="developer">Community</span>
-						and 
-						<span class="developer">Social Media Manager</span>
+						<span >and</span>
+						 
+						<span class="developer" >Social Media Manager</span>
 					</div>
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
-						<p>
-							Welcome to my website!</p>
+						<p >
+							Welcome to my website! <br> <br>
 							My name is Iman and I have been working as a Community Manager and Social Media Manager since early 2016. Here you can find more information about me, Things like my service and offers, latest projects I worked on, what people that I worked with say about me and my contact information.
-
 							</p>
 						<p>
 
@@ -139,7 +140,7 @@
 
 
 	<!-- Start About Area -->
-	<section class="about-area section-gap">
+	<section class="about-area section-gap" id="aboutme">
 		<div class="container">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-lg-6 about-left">
@@ -147,7 +148,7 @@
 				</div>
 				<div class="col-lg-5 col-md-12 about-right">
 					<div class="section-title">
-						<h2>about Me</h2>
+						<h2 style="color:#fff;">about Me</h2>
 					</div>
 					<div class="mb-50 wow fadeIn" data-wow-duration=".8s">
 						<p>
@@ -167,7 +168,7 @@
 						<span>I</span>
 						<span>n</span>
 					</a>
-					<a href="img/CV - Community Manager.jpg" target="_blank" class="primary-btn" data-text="Resume">
+					<a href="img/CV - Community Manager.jpg" target="_blank" class="primary-btn" data-text="Resume" style="border:2px solid #fff;">
 						<span>R</span>
 						<span>e</span>
 						<span>s</span>
@@ -405,7 +406,7 @@
 
 
 	<!-- Start Service Area -->
-	<section class="service-area section-gap">
+	<section class="service-area section-gap" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -550,7 +551,7 @@
 
 
 	<!-- Start Contact Area -->
-	<section class="contact-area section-gap">
+	<section class="contact-area section-gap" id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -572,7 +573,8 @@
 				</div>
 				<div class="col-lg-4 col-md-4">
 					<div class="contact-box">
-						<h4>iman.ghajar89@gmail.com</h4>
+						<!-- <h4>iman.ghajar89@gmail.com</h4> -->
+						<a href = "mailto: iman.ghajar89@gmail.com">iman.ghajar89@gmail.com</a>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4">
@@ -581,6 +583,71 @@
 					</div>
 				</div>
 			</div>
+
+
+
+			<!-- <div class="col-lg-12 cntct-form">
+				<form action="https://formspree.io/usmanrana18989@gmail.com" method="POST">
+					<input type="text" name="name">
+					<input type="email" name="_replyto">
+					<input type="text" name="subject">
+					<textarea name="message" id="" cols="30" rows="2"></textarea>
+					<input type="submit" value="Send">
+				</form> 
+			</div> -->
+
+
+
+
+
+			<div class="col-lg-12">
+				<form class="form-area " action="https://formspree.io/iman.ghajar89@gmail.com" method="POST" class="contact-form text-right">
+					<div class="row">
+						<div class="col-lg-6 form-group form-group-top">
+							<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								class="common-input mb-20 form-control" required="" type="text">
+
+							<input name="+replyto" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+								onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+							<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'"
+								class="common-input mb-20 form-control" required="" type="text">
+						</div>
+						<div class="col-lg-6 form-group">
+							<textarea class="common-textarea form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'"
+							rows="5" required=""></textarea>
+						</div>
+						<div class="col-lg-12">
+							<div class="alert-msg" style="text-align: left;"></div>
+
+							<button class="primary-btn" style="float: right;" data-text="Send Message">
+								<span>S</span>
+								<span>e</span>
+								<span>n</span>
+								<span>d</span>
+								<span> </span>
+								<span>M</span>
+								<span>e</span>
+								<span>s</span>
+								<span>s</span>
+								<span>a</span>
+								<span>g</span>
+								<span>e</span>
+
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+
+
+
+
+
+
+
 
 		
 		</div>
